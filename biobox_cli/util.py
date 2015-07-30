@@ -1,7 +1,7 @@
 
 def command_line_args(doc, argv, is_main_module):
     from docopt  import docopt
-    from version import __version__
+    from .version import __version__
     return docopt(doc,
                   argv          = argv,
                   version       = __version__,
